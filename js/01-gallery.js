@@ -21,6 +21,4 @@ li.classList = 'gallery__item';
 li.appendChild(a);
 
 ul.appendChild(li);
-
 }
-
