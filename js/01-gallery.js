@@ -20,5 +20,11 @@ const li = document.createElement('li');
 li.classList = 'gallery__item';
 li.appendChild(a);
 
+li.onclick = e => {
+    const instance = basicLightbox.create(`<img src="${galleryItem.original}">`)
+    instance.show()
+    e.preventDefault()
+}
+
 ul.appendChild(li);
 }
